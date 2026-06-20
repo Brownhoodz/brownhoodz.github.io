@@ -1,29 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Brownhoodz</title>
 
-<link rel="preconnect"
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect"
-
-href="https://fonts.gstatic.com"
-
-crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
-
-rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
 
 <style>
@@ -45,7 +35,7 @@ scroll-behavior:smooth;
 
 body{
 
-background:#080808;
+background:#090909;
 
 color:white;
 
@@ -61,26 +51,23 @@ overflow-x:hidden;
 
 height:100vh;
 
-
 background:
 
 linear-gradient(
 
 rgba(0,0,0,.45),
 
-rgba(0,0,0,.7)
+rgba(0,0,0,.75)
 
 ),
 
 url("hero.jpg.jpeg");
-
 
 background-size:cover;
 
 background-position:center;
 
 background-attachment:fixed;
-
 
 display:flex;
 
@@ -107,15 +94,15 @@ width:65px;
 
 height:65px;
 
-border-radius:50%;
-
 object-fit:cover;
+
+border-radius:50%;
 
 box-shadow:
 
 0 0 25px
 
-rgba(255,255,255,.1);
+rgba(255,255,255,.12);
 
 }
 
@@ -132,7 +119,13 @@ padding:20px;
 .hero h1{
 
 
-font-size:7rem;
+font-size:6rem;
+
+font-weight:900;
+
+letter-spacing:-3px;
+
+line-height:1;
 
 
 background:
@@ -143,9 +136,11 @@ linear-gradient(
 
 #ffffff,
 
-#fff3d6,
+#ffffff,
 
-#d4af37
+#f7f4ee,
+
+#ead7a2
 
 );
 
@@ -155,8 +150,6 @@ linear-gradient(
 -webkit-text-fill-color:transparent;
 
 
-font-weight:900;
-
 }
 
 
@@ -164,31 +157,28 @@ font-weight:900;
 
 margin-top:15px;
 
+font-size:1.4rem;
+
 letter-spacing:6px;
 
 font-weight:500;
 
-font-size:1.5rem;
-
-color:#f3e2b4;
+color:#efe0b4;
 
 }
 
 
 .hero p{
 
-margin-top:30px;
+margin-top:28px;
 
-font-size:1.2rem;
+font-size:1.15rem;
 
-line-height:1.9;
+line-height:1.8;
 
-color:#efefef;
+color:#ececec;
 
 }
-
-
-/* BUTTONS */
 
 
 .buttons{
@@ -199,7 +189,7 @@ justify-content:center;
 
 gap:20px;
 
-margin-top:45px;
+margin-top:40px;
 
 flex-wrap:wrap;
 
@@ -214,9 +204,9 @@ padding:
 
 border-radius:40px;
 
-text-decoration:none;
-
 font-weight:700;
+
+text-decoration:none;
 
 transition:.3s;
 
@@ -245,7 +235,7 @@ translateY(-5px);
 
 border:
 
-2px solid #d4af37;
+2px solid #d7bb73;
 
 color:white;
 
@@ -254,7 +244,7 @@ color:white;
 
 .instagram:hover{
 
-background:#d4af37;
+background:#d7bb73;
 
 color:black;
 
@@ -265,14 +255,15 @@ translateY(-5px);
 }
 
 
+
 /* PRODUCTS */
 
 
 .products{
 
-padding:110px 8%;
+padding:100px 8%;
 
-background:#0d0d0d;
+background:#0f0f0f;
 
 text-align:center;
 
@@ -294,7 +285,7 @@ display:flex;
 
 justify-content:center;
 
-gap:30px;
+gap:28px;
 
 flex-wrap:wrap;
 
@@ -303,27 +294,21 @@ flex-wrap:wrap;
 
 .card{
 
+width:240px;
 
-width:250px;
-
-
-background:#111;
-
+background:#151515;
 
 border-radius:22px;
 
-
 overflow:hidden;
 
+transition:.4s;
 
 border:
 
 1px solid
 
-rgba(212,175,55,.2);
-
-
-transition:.4s;
+rgba(255,255,255,.08);
 
 }
 
@@ -339,9 +324,9 @@ scale(1.03);
 
 box-shadow:
 
-0 20px 50px
+0 20px 40px
 
-rgba(212,175,55,.18);
+rgba(234,215,162,.15);
 
 }
 
@@ -353,6 +338,8 @@ width:100%;
 height:280px;
 
 object-fit:cover;
+
+display:block;
 
 }
 
@@ -370,19 +357,29 @@ font-size:1.4rem;
 
 padding:
 
-15px
+12px
 
 18px
 
-30px;
-
-color:#cfcfcf;
-
-line-height:1.7;
+28px;
 
 font-size:.95rem;
 
+line-height:1.7;
+
+color:#bfbfbf;
+
 }
+
+
+.card-link{
+
+text-decoration:none;
+
+color:white;
+
+}
+
 
 
 /* FOOTER */
@@ -390,13 +387,14 @@ font-size:.95rem;
 
 footer{
 
-padding:60px;
+padding:55px;
 
 text-align:center;
 
 color:#888;
 
 }
+
 
 
 /* MOBILE */
@@ -409,12 +407,16 @@ color:#888;
 
 font-size:4rem;
 
+letter-spacing:-1px;
+
 }
 
 
 .hero h2{
 
 font-size:1rem;
+
+letter-spacing:4px;
 
 }
 
@@ -434,6 +436,15 @@ height:55px;
 
 left:20px;
 
+top:20px;
+
+}
+
+
+.products h2{
+
+font-size:2.2rem;
+
 }
 
 
@@ -443,6 +454,7 @@ left:20px;
 </style>
 
 </head>
+
 
 <body>
 
@@ -455,8 +467,9 @@ left:20px;
 
 src="bh.jpeg"
 
-class="logo">
+class="logo"
 
+>
 
 
 <div class="hero-content">
@@ -482,8 +495,7 @@ Curated thrifted streetwear
 
 for those who move differently.
 
-
-<br><br>
+<br>
 
 Rare finds.
 
@@ -500,11 +512,11 @@ Own your story.
 
 <a
 
-href="https://wa.me/917034280825?text=Heyy%20👋%20I'm%20interested%20to%20know%20more%20about%20your%20products."
-
-class="btn whatsapp"
+href="https://wa.me/917034280825?text=Hey%20I'm%20interested%20to%20know%20more%20about%20your%20products."
 
 target="_blank"
+
+class="btn whatsapp"
 
 >
 
@@ -518,9 +530,9 @@ WHATSAPP US
 
 href="https://instagram.com/brownhoodz"
 
-class="btn instagram"
-
 target="_blank"
+
+class="btn instagram"
 
 >
 
@@ -540,8 +552,8 @@ FOLLOW @BROWNHOODZ
 
 
 
-<section class="products">
 
+<section class="products">
 
 <h2>
 
@@ -550,32 +562,29 @@ Rare Finds
 </h2>
 
 
-
 <div class="cards">
 
 
 
 <a
 
-href="https://wa.me/917034280825?text=Heyy%20👋%20I'm%20interested%20in%20the%20Rare%20Collection."
+class="card-link"
+
+href="https://wa.me/917034280825?text=Hey%20I'm%20interested%20in%20the%20Rare%20Collection."
 
 target="_blank"
 
-style="text-decoration:none;color:white;">
-
+>
 
 <div class="card">
 
-
 <img src="rare.jpg.jpeg">
-
 
 <h3>
 
 Rare Collection
 
 </h3>
-
 
 <p>
 
@@ -587,7 +596,6 @@ who love standing out.
 
 </p>
 
-
 </div>
 
 </a>
@@ -598,18 +606,17 @@ who love standing out.
 
 <a
 
-href="https://wa.me/917034280825?text=Heyy%20👋%20I'm%20interested%20in%20the%20Hoodies."
+class="card-link"
+
+href="https://wa.me/917034280825?text=Hey%20I'm%20interested%20in%20the%20Hoodies."
 
 target="_blank"
 
-style="text-decoration:none;color:white;">
-
+>
 
 <div class="card">
 
-
 <img src="hoodie.jpg.jpeg">
-
 
 <h3>
 
@@ -617,17 +624,15 @@ Hoodies
 
 </h3>
 
-
 <p>
 
-Oversized hoodies with
+Oversized hoodies
 
-clean streetwear vibes
+with clean streetwear vibes
 
 and timeless style.
 
 </p>
-
 
 </div>
 
@@ -637,28 +642,25 @@ and timeless style.
 
 
 
-
 <a
 
-href="https://wa.me/917034280825?text=Heyy%20👋%20I'm%20interested%20in%20the%20Graphic%20Tees."
+class="card-link"
+
+href="https://wa.me/917034280825?text=Hey%20I'm%20interested%20in%20the%20Graphic%20Tees."
 
 target="_blank"
 
-style="text-decoration:none;color:white;">
-
+>
 
 <div class="card">
 
-
 <img src="tee.jpg.jpeg">
-
 
 <h3>
 
 Graphic Tees
 
 </h3>
-
 
 <p>
 
@@ -670,7 +672,6 @@ and rare prints.
 
 </p>
 
-
 </div>
 
 </a>
@@ -679,8 +680,8 @@ and rare prints.
 
 </div>
 
-</section>
 
+</section>
 
 
 
@@ -689,6 +690,7 @@ and rare prints.
 © 2026 Brownhoodz
 
 </footer>
+
 
 
 </body>
