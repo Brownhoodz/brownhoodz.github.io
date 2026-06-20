@@ -1,10 +1,16 @@
  <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Brownhoodz</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -12,117 +18,180 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Montserrat',sans-serif;
 }
 
 body{
-background:#0d0d0d;
-color:white;
-}
 
-.hero{
-height:100vh;
+background:linear-gradient(
+135deg,
+#000000,
+#1c1a17,
+#3e2c20
+);
+
+min-height:100vh;
+
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
+
+color:white;
+
+}
+
+.container{
+
 text-align:center;
-padding:20px;
+padding:40px;
+
 }
 
-.hero h1{
+.logo{
+
 font-size:90px;
+font-weight:900;
+
 letter-spacing:8px;
-margin-bottom:15px;
+
+background:linear-gradient(
+to right,
+#ffffff,
+#d2b48c,
+#8b5e3c
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+margin-bottom:20px;
+
 }
 
-.hero p{
-font-size:24px;
-color:#bdbdbd;
-margin-bottom:35px;
+.tagline{
+
+font-size:28px;
+
+font-weight:500;
+
+letter-spacing:3px;
+
+color:#f2e3d5;
+
+margin-bottom:45px;
+
+}
+
+.description{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#d9c7b7;
+
+margin-bottom:50px;
+
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
 }
 
 .btn{
+
 text-decoration:none;
-background:white;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+font-weight:700;
+
+font-size:16px;
+
+transition:0.3s;
+
+}
+
+.shop{
+
+background:linear-gradient(
+to right,
+#8b5e3c,
+#d2b48c
+);
+
 color:black;
-padding:15px 35px;
-border-radius:40px;
-font-weight:bold;
-transition:0.3s;
+
 }
 
-.btn:hover{
-transform:scale(1.08);
-}
+.shop:hover{
 
-.section{
-padding:80px 10%;
-text-align:center;
-}
+transform:translateY(-5px);
 
-.section h2{
-font-size:45px;
-margin-bottom:40px;
-}
+box-shadow:0 10px 30px rgba(210,180,140,0.4);
 
-.cards{
-display:flex;
-gap:25px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.card{
-background:#181818;
-padding:35px;
-border-radius:20px;
-width:250px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h3{
-margin-bottom:15px;
-font-size:28px;
-}
-
-.card p{
-color:#bdbdbd;
 }
 
 .insta{
-text-align:center;
-padding:80px 20px;
+
+border:2px solid #d2b48c;
+
+color:white;
+
 }
 
-.insta a{
-color:white;
-font-size:28px;
-text-decoration:none;
+.insta:hover{
+
+background:#d2b48c;
+
+color:black;
+
+transform:translateY(-5px);
+
 }
 
 footer{
-padding:30px;
-text-align:center;
-color:#888;
+
+margin-top:70px;
+
+font-size:14px;
+
+color:#aaa;
+
 }
 
 @media(max-width:768px){
 
-.hero h1{
+.logo{
+
 font-size:55px;
+
 }
 
-.hero p{
-font-size:18px;
+.tagline{
+
+font-size:20px;
+
 }
 
-.section h2{
-font-size:35px;
+.description{
+
+font-size:16px;
+
 }
 
 }
@@ -133,74 +202,54 @@ font-size:35px;
 
 <body>
 
-<div class="hero">
+<div class="container">
 
-<h1>BROWNHOODZ</h1>
+<h1 class="logo">
+BROWNHOODZ
+</h1>
 
-<p>THE STREET IS YOUR RUNWAY</p>
+<p class="tagline">
+THE STREET IS YOUR RUNWAY
+</p>
 
-<a class="btn" href="https://instagram.com/brownhoodz" target="_blank">
+<p class="description">
+
+Brownhoodz is more than clothing.
+
+It's confidence, individuality and street culture combined into timeless pieces made for those who dare to stand out.
+
+Wear your story.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn shop"
+href="https://instagram.com/brownhoodz"
+target="_blank">
+
 SHOP NOW
+
 </a>
 
-</div>
 
+<a class="btn insta"
+href="https://instagram.com/brownhoodz"
+target="_blank">
 
-<div class="section">
-
-<h2>Featured Collection</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Oversized Tees</h3>
-
-<p>Comfort meets street culture.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Vintage Hoodies</h3>
-
-<p>Wear the story. Own the street.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Street Essentials</h3>
-
-<p>Designed for individuality.</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="insta">
-
-<h2>Follow Us</h2>
-
-<br>
-
-<a href="https://instagram.com/brownhoodz" target="_blank">
-
-@brownhoodz
+FOLLOW @BROWNHOODZ
 
 </a>
 
 </div>
-
 
 <footer>
 
-© 2026 Brownhoodz. All rights reserved.
+© 2026 Brownhoodz
 
 </footer>
+
+</div>
 
 </body>
 
