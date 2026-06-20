@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Brownhoodz</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 
@@ -23,33 +21,42 @@ font-family:'Montserrat',sans-serif;
 
 body{
 
-background:linear-gradient(
+background:
+linear-gradient(
 135deg,
 #000000,
-#1c1a17,
-#3e2c20
+#1c140e,
+#5b3a29
 );
-
-min-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
 
 color:white;
 
+overflow-x:hidden;
+
 }
 
-.container{
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
 
 text-align:center;
-padding:40px;
+
+padding:20px;
 
 }
 
-.logo{
+h1{
 
-font-size:90px;
+font-size:100px;
+
 font-weight:900;
 
 letter-spacing:8px;
@@ -57,70 +64,69 @@ letter-spacing:8px;
 background:linear-gradient(
 to right,
 #ffffff,
-#d2b48c,
-#8b5e3c
+#f4e1c1,
+#9b6a43
 );
 
 -webkit-background-clip:text;
+
 -webkit-text-fill-color:transparent;
 
-margin-bottom:20px;
+text-shadow:0 0 30px rgba(255,255,255,0.15);
 
 }
 
 .tagline{
 
-font-size:28px;
+font-size:30px;
 
-font-weight:500;
+margin-top:10px;
 
-letter-spacing:3px;
+letter-spacing:4px;
 
-color:#f2e3d5;
-
-margin-bottom:45px;
+color:#f2d8b3;
 
 }
 
 .description{
 
+margin-top:35px;
+
 max-width:700px;
 
-margin:auto;
-
-font-size:18px;
+font-size:20px;
 
 line-height:1.8;
 
 color:#d9c7b7;
 
-margin-bottom:50px;
-
 }
 
 .buttons{
 
+margin-top:50px;
+
 display:flex;
 
-justify-content:center;
-
-gap:20px;
+gap:25px;
 
 flex-wrap:wrap;
+
+justify-content:center;
 
 }
 
 .btn{
 
-text-decoration:none;
-
 padding:18px 40px;
 
 border-radius:50px;
 
+font-size:18px;
+
 font-weight:700;
 
-font-size:16px;
+text-decoration:none;
 
 transition:0.3s;
 
@@ -129,9 +135,13 @@ transition:0.3s;
 .shop{
 
 background:linear-gradient(
+
 to right,
-#8b5e3c,
-#d2b48c
+
+#7a5130,
+
+#cfa77a
+
 );
 
 color:black;
@@ -140,9 +150,11 @@ color:black;
 
 .shop:hover{
 
-transform:translateY(-5px);
+transform:translateY(-6px);
 
-box-shadow:0 10px 30px rgba(210,180,140,0.4);
+box-shadow:
+
+0 0 30px rgba(207,167,122,0.5);
 
 }
 
@@ -160,15 +172,121 @@ background:#d2b48c;
 
 color:black;
 
-transform:translateY(-5px);
+transform:translateY(-6px);
+
+}
+
+.scroll{
+
+margin-top:80px;
+
+font-size:18px;
+
+color:#b89d7f;
+
+animation:updown 1.5s infinite;
+
+}
+
+@keyframes updown{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.collection{
+
+padding:100px 30px;
+
+text-align:center;
+
+}
+
+.collection h2{
+
+font-size:50px;
+
+margin-bottom:60px;
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.card{
+
+width:280px;
+
+height:350px;
+
+border-radius:25px;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#181818,
+
+#3d291e
+
+);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+font-weight:700;
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 0 35px rgba(210,180,140,0.4);
 
 }
 
 footer{
 
-margin-top:70px;
+text-align:center;
 
-font-size:14px;
+padding:50px;
 
 color:#aaa;
 
@@ -176,9 +294,9 @@ color:#aaa;
 
 @media(max-width:768px){
 
-.logo{
+h1{
 
-font-size:55px;
+font-size:60px;
 
 }
 
@@ -194,6 +312,12 @@ font-size:16px;
 
 }
 
+.collection h2{
+
+font-size:35px;
+
+}
+
 }
 
 </style>
@@ -202,54 +326,102 @@ font-size:16px;
 
 <body>
 
-<div class="container">
+<section class="hero">
 
-<h1 class="logo">
+<h1>
+
 BROWNHOODZ
+
 </h1>
 
 <p class="tagline">
+
 THE STREET IS YOUR RUNWAY
+
 </p>
 
 <p class="description">
 
-Brownhoodz is more than clothing.
+Brownhoodz isn't just clothing.
 
-It's confidence, individuality and street culture combined into timeless pieces made for those who dare to stand out.
+It's confidence, individuality and street culture woven into timeless pieces.
 
 Wear your story.
+
+Own your streets.
 
 </p>
 
 <div class="buttons">
 
 <a class="btn shop"
+
 href="https://instagram.com/brownhoodz"
+
 target="_blank">
 
 SHOP NOW
 
 </a>
 
-
 <a class="btn insta"
+
 href="https://instagram.com/brownhoodz"
+
 target="_blank">
 
-FOLLOW @BROWNHOODZ
+@BROWNHOODZ
 
 </a>
 
 </div>
+
+<div class="scroll">
+
+↓ Scroll ↓
+
+</div>
+
+</section>
+
+
+<section class="collection">
+
+<h2>
+
+Featured Collection
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+HOODIES
+
+</div>
+
+<div class="card">
+
+OVERSIZED
+
+</div>
+
+<div class="card">
+
+STREETWEAR
+
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
 © 2026 Brownhoodz
 
 </footer>
-
-</div>
 
 </body>
 
