@@ -7,15 +7,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Brownhoodz - Premium Thrifted Streetwear">
-
 <title>Brownhoodz</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -24,21 +22,27 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Montserrat',sans-serif;
+}
+
+html{
 scroll-behavior:smooth;
 }
 
 body{
-background:#080808;
+
+background:#090909;
+
 color:white;
+
 overflow-x:hidden;
+
 }
+
 
 
 /* HERO */
 
 .hero{
-
-position:relative;
 
 min-height:100vh;
 
@@ -52,11 +56,16 @@ text-align:center;
 
 padding:100px 20px;
 
+position:relative;
+
 background:
 
 linear-gradient(
-rgba(0,0,0,.45),
+
+rgba(0,0,0,.55),
+
 rgba(0,0,0,.8)
+
 ),
 
 url("hero.jpg.jpeg");
@@ -88,18 +97,20 @@ box-shadow:
 
 0 0 25px
 
-rgba(212,175,55,.25);
+rgba(255,255,255,.15);
 
 }
+
 
 
 .hero-content{
 
 max-width:850px;
 
-animation:fadeup 1s ease;
+animation:fadeUp 1s ease;
 
 }
+
 
 
 .hero h1{
@@ -107,32 +118,43 @@ animation:fadeup 1s ease;
 font-size:
 
 clamp(
+
 3rem,
+
 12vw,
-7rem
+
+8rem
+
 );
 
 font-weight:900;
 
+letter-spacing:-3px;
+
 line-height:1;
 
-letter-spacing:-3px;
 
 background:
 
 linear-gradient(
+
 90deg,
+
 #ffffff,
-#fff,
-#d4af37,
-#8b6914
+
+#f4f4f4,
+
+#bdbdbd
+
 );
+
 
 -webkit-background-clip:text;
 
 -webkit-text-fill-color:transparent;
 
 }
+
 
 
 .hero h2{
@@ -142,18 +164,23 @@ margin-top:20px;
 font-size:
 
 clamp(
+
 .9rem,
+
 2vw,
+
 1.3rem
+
 );
 
 letter-spacing:6px;
 
-color:#e4c46c;
-
 font-weight:500;
 
+color:#d9d9d9;
+
 }
+
 
 
 .hero p{
@@ -163,14 +190,18 @@ margin-top:28px;
 font-size:
 
 clamp(
+
 1rem,
+
 2vw,
+
 1.15rem
+
 );
 
 line-height:1.9;
 
-color:#e8e8e8;
+color:#e5e5e5;
 
 padding:0 10px;
 
@@ -187,7 +218,7 @@ display:flex;
 
 justify-content:center;
 
-gap:20px;
+gap:18px;
 
 flex-wrap:wrap;
 
@@ -196,11 +227,12 @@ margin-top:45px;
 }
 
 
+
 .btn{
 
 padding:
 
-18px 38px;
+18px 35px;
 
 border-radius:50px;
 
@@ -213,6 +245,7 @@ transition:.35s;
 }
 
 
+
 .whatsapp{
 
 background:white;
@@ -220,6 +253,7 @@ background:white;
 color:black;
 
 }
+
 
 
 .whatsapp:hover{
@@ -248,7 +282,7 @@ border:
 
 1px solid
 
-rgba(212,175,55,.3);
+rgba(255,255,255,.15);
 
 color:white;
 
@@ -257,15 +291,19 @@ backdrop-filter:blur(10px);
 }
 
 
+
 .instagram:hover{
 
-background:#8b6914;
+background:white;
+
+color:black;
 
 transform:
 
 translateY(-6px);
 
 }
+
 
 
 
@@ -283,32 +321,25 @@ background:#0d0d0d;
 }
 
 
+
 .products h2{
 
 font-size:
 
 clamp(
+
 2rem,
+
 5vw,
+
 3.5rem
+
 );
 
 margin-bottom:70px;
 
-background:
-
-linear-gradient(
-90deg,
-#fff,
-#d4af37,
-#8b6914
-);
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
 }
+
 
 
 .cards{
@@ -324,42 +355,27 @@ flex-wrap:wrap;
 }
 
 
+
 .card{
 
 width:300px;
 
 background:#151515;
 
-border-radius:28px;
+border-radius:25px;
 
 overflow:hidden;
+
+transition:.4s;
 
 border:
 
 1px solid
 
-rgba(212,175,55,.15);
-
-transition:.4s;
-
-opacity:0;
-
-transform:
-
-translateY(60px);
+rgba(255,255,255,.08);
 
 }
 
-
-.card.show{
-
-opacity:1;
-
-transform:
-
-translateY(0);
-
-}
 
 
 .card:hover{
@@ -374,20 +390,24 @@ box-shadow:
 
 0 20px 60px
 
-rgba(212,175,55,.18);
+rgba(255,255,255,.08);
 
 }
+
 
 
 .card img{
 
 width:100%;
 
-height:360px;
+height:350px;
 
 object-fit:cover;
 
+display:block;
+
 }
+
 
 
 .card h3{
@@ -397,6 +417,7 @@ padding-top:22px;
 font-size:1.5rem;
 
 }
+
 
 
 .card p{
@@ -411,10 +432,9 @@ padding:
 
 line-height:1.8;
 
-color:#c4c4c4;
+color:#bfbfbf;
 
 }
-
 
 
 
@@ -425,7 +445,7 @@ color:#c4c4c4;
 
 padding:
 
-130px
+120px
 
 10%;
 
@@ -436,31 +456,25 @@ background:#090909;
 }
 
 
+
 .about h2{
 
 font-size:
 
 clamp(
+
 2rem,
+
 5vw,
+
 3.5rem
+
 );
 
 margin-bottom:35px;
 
-background:
-
-linear-gradient(
-90deg,
-#fff,
-#d4af37
-);
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
 }
+
 
 
 .about p{
@@ -469,17 +483,21 @@ max-width:850px;
 
 margin:auto;
 
+line-height:2;
+
 font-size:
 
 clamp(
+
 1rem,
+
 2vw,
+
 1.15rem
+
 );
 
-line-height:2;
-
-color:#d7d7d7;
+color:#d5d5d5;
 
 }
 
@@ -501,18 +519,11 @@ background:#050505;
 }
 
 
-footer p{
-
-margin:8px 0;
-
-}
-
-
 
 /* ANIMATION */
 
 
-@keyframes fadeup{
+@keyframes fadeUp{
 
 from{
 
@@ -538,10 +549,12 @@ translateY(0);
 
 
 
+
 /* MOBILE */
 
 
 @media(max-width:768px){
+
 
 .logo{
 
@@ -565,7 +578,7 @@ padding:90px 20px;
 
 .hero h2{
 
-letter-spacing:4px;
+letter-spacing:3px;
 
 }
 
@@ -593,24 +606,34 @@ max-width:350px;
 
 </head>
 
-
 <body>
 
 
 
 <section class="hero">
 
+
 <img src="bh.jpeg" class="logo">
+
 
 <div class="hero-content">
 
+
 <h1>BROWNHOODZ</h1>
 
-<h2>THE STREET IS YOUR RUNWAY</h2>
+
+<h2>
+
+THE STREET IS YOUR RUNWAY
+
+</h2>
+
 
 <p>
 
-Curated thrifted streetwear for those who move differently.
+Curated thrifted streetwear
+
+for those who move differently.
 
 <br>
 
@@ -623,11 +646,13 @@ Own your story.
 </p>
 
 
+
 <div class="buttons">
+
 
 <a
 
-href="https://wa.me/917034280825"
+href="https://wa.me/917034280825?text=Hey%20I'm%20interested%20in%20Brownhoodz!"
 
 target="_blank"
 
@@ -655,11 +680,13 @@ FOLLOW @BROWNHOODZ
 
 </a>
 
+
 </div>
 
 </div>
 
 </section>
+
 
 
 
@@ -670,6 +697,7 @@ FOLLOW @BROWNHOODZ
 
 
 <div class="cards">
+
 
 
 <div class="card">
@@ -685,6 +713,7 @@ Unique thrifted pieces handpicked for those who love standing out.
 </p>
 
 </div>
+
 
 
 
@@ -706,6 +735,7 @@ Oversized hoodies with clean streetwear vibes and timeless style.
 
 
 
+
 <div class="card">
 
 <img src="tee.jpg.jpeg">
@@ -721,6 +751,7 @@ Vintage and modern tees with bold designs and rare prints.
 </div>
 
 
+
 </div>
 
 </section>
@@ -731,11 +762,19 @@ Vintage and modern tees with bold designs and rare prints.
 
 <section class="about">
 
-<h2>About Brownhoodz</h2>
+
+<h2>
+
+About Brownhoodz
+
+</h2>
+
 
 <p>
 
-At Brownhoodz, clothing isn't made to be forgotten.
+At Brownhoodz,
+
+clothing isn't made to be forgotten.
 
 We hunt for exceptional pieces,
 
@@ -747,67 +786,30 @@ to those who dare to stand apart.
 
 </p>
 
+
 </section>
+
 
 
 
 
 <footer>
 
-<p>© 2026 Brownhoodz</p>
+<p>
 
-<p>Made with ❤️</p>
+© 2026 Brownhoodz
+
+</p>
+
+<p>
+
+Made with ❤️
+
+</p>
 
 </footer>
 
 
-
-
-<script>
-
-const cards=document.querySelectorAll(".card");
-
-const observer=
-
-new IntersectionObserver(
-
-(entries)=>{
-
-entries.forEach(
-
-entry=>{
-
-if(
-
-entry.isIntersecting
-
-){
-
-entry.target.classList.add("show");
-
-}
-
-}
-
-);
-
-},
-
-{
-
-threshold:.2
-
-}
-
-);
-
-cards.forEach(
-
-card=>observer.observe(card)
-
-);
-
-</script>
 
 </body>
 
